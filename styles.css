@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Style social media icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 2em; /* Adjust size */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+
+/* Main Content Styles */
+.main-content {
+    width: 75%;
+    padding: 20px;
+}
+
+#projects, #skills {
+    margin-bottom: 40px;
+}
+
+.project, .skill-project {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project a, .skill-project a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.project a:hover, .skill-project a:hover {
+    text-decoration: underline;
+}
+
+/* Style for project icons */
+.project-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project-icons span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.project-icons i, .project-icons img {
+    margin-right: 5px;
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.project-icons img {
+    width: 20px; /* Adjust image size */
+    height: 20px;
+}
