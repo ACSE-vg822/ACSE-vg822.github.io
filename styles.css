@@ -92,6 +92,47 @@ body {
     margin-bottom: 40px;
 }
 
+/* Fade-in effect for project cards */
+.project {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
+
+/* Transparent Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #3498db; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
 .project, .skill-project {
     background-color: white;
     margin: 20px 0;
@@ -161,6 +202,20 @@ body {
     width: 20px;
     height: 20px;
 }
+
+/* Button Hover Effect */
+a:hover {
+    color: #fff;
+    background-color: #3498db;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Project Card Hover */
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Footer (optional) */
 footer {
