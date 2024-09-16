@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vidushee's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidushee's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <body>
     <div class="container">
         <!-- Left Side: Profile and Links -->
@@ -17,7 +17,7 @@
                 <a href="https://www.linkedin.com/in/vidushee-geetam/" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/ACSE-vg822" target="_blank"title="GitHub">
+                <a href="https://github.com/ACSE-vg822" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="mailto:vidusheegeetam@gmail.com" target="_blank" title="Email">
@@ -27,8 +27,8 @@
             <div class="intro">
                 <h2>About Me</h2>
                 <p>Hi, I'm Vidushee, a recent graduate from Imperial College London in MSc Applied Computational Science and Engineering.
-                     I have a passion for building intelligent systems and creating innovative solutions to real-world problems. Previously at SLB(formerly Schlumberger), 
-                     currently working as a Data Scientist at <a href="https://unchartedwaters.com" target="_blank">Uncharted Waters</a>.</p>
+                    I have a passion for building intelligent systems and creating innovative solutions to real-world problems. Previously at SLB(formerly Schlumberger), 
+                    currently working as a Data Scientist at <a href="https://unchartedwaters.com" target="_blank">Uncharted Waters</a>.</p>
             </div>
         </div>
 
@@ -37,6 +37,30 @@
             <!-- Projects Section -->
             <section id="projects">
                 <h2>Selected projects in data science and machine learning</h2>
+
+                <!-- Move 'Chat with PDF' project to the top -->
+                <div class="project">
+                    <h3>Chat with PDF</h3>
+                    <!-- <img src="path/to/chat-with-pdf/image.jpg" alt="Chat with PDF Screenshot"> -->
+                    <p>Developed a web application that allows users to interact with custom PDF documents using natural language. 
+                       This project leverages Amazon Titan models to extract and process information from PDFs, enabling 
+                       users to query documents and get instant responses.</p>
+                    <a href="https://github.com/ACSE-vg822/Chat-with-PDF" target="_blank" class="button">Source Code</a>
+                    <a href="https://chat-with-pdf-kdsfogmlbubptprgjgajyw.streamlit.app/" target="_blank" class="button">App</a>                       
+
+                    <!-- Add icons for tools/technologies used -->
+                    <div class="project-icons">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-robot"></i> AI</span>
+                        <span><i class="fab fa-aws"></i> AWS</span>
+                        <span><i class="fas fa-brain"></i> LLM</span>
+                        <span><i class="fas fa-link"></i> LangChain</span>
+                        <span><i class="fas fa-database"></i> RAG</span>
+                        <span><i class="fas fa-file-pdf"></i> PDF Processing</span>
+                    </div>                    
+                </div>
+
+                <!-- Anomaly Detection Project -->
                 <div class="project">
                     <h3>Anomaly detection in IoT sensor data</h3>
                     <!-- <img src="path/to/project1/image.jpg" alt="Project 1 Screenshot"> -->
@@ -52,28 +76,8 @@
                         <span><i class="fas fa-chart-line"></i> Machine Learning</span>
                     </div>
                 </div>
-                <div class="project">
-                    <h3>Chat with PDF</h3>
-                    <!-- <img src="path/to/chat-with-pdf/image.jpg" alt="Chat with PDF Screenshot"> -->
-                    <p>Developed a web application that allows users to interact with custom PDF documents using natural language. 
-                       This project leverages Amazon Titan models to extract and process information from PDFs, enabling 
-                       users to query documents and get instant responses.</p>
-                       <a href="https://github.com/ACSE-vg822/Chat-with-PDF" target="_blank" class="button">Source Code</a>
-                       <a href="https://chat-with-pdf-kdsfogmlbubptprgjgajyw.streamlit.app/" target="_blank" class="button">App</a>                       
-                    
-                    <!-- Add icons for tools/technologies used -->
-                    <div class="project-icons">
-                        <span><i class="fab fa-python"></i> Python</span>
-                        <span><i class="fas fa-robot"></i> AI</span>
-                        <span><i class="fab fa-aws"></i> AWS</span>
-                        <span><i class="fas fa-brain"></i> LLM</span>
-                        <span><i class="fas fa-link"></i> LangChain</span>
-                        <span><i class="fas fa-database"></i> RAG</span>
-                        <span><i class="fas fa-file-pdf"></i> PDF Processing</span>
-                    </div>
-                    
-                </div>
                 
+                <!-- Scrapy MongoDB Web Scraper Project -->
                 <div class="project">
                     <h3>Scrapy MongoDB Web Scraper</h3>
                     <!-- <img src="path/to/scrapy-mongodb-scraper/image.jpg" alt="Scrapy MongoDB Web Scraper Screenshot"> -->
@@ -90,7 +94,7 @@
                         <!-- Add more icons as needed for other technologies used -->
                     </div>
                 </div>
-                                
+                
                 <!-- Add more projects as needed -->
             </section>
 
