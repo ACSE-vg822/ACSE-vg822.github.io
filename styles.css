@@ -148,24 +148,22 @@ body {
 /* Button Styles */
 .button {
     display: inline-block;
-    padding: 5px 15px; /* Reduce padding for smaller buttons */
+    padding: 4px 10px; /* Smaller padding for compact size */
     margin-right: 10px;
-    font-size: 0.9em; /* Keep font size as it is */
+    font-size: 0.9em; /* Keep font size consistent */
     font-weight: bold;
-    color: #1e90ff; /* Text color */
-    background-color: transparent; /* Transparent background */
-    border: 2px solid #1e90ff; /* Border color */
-    border-radius: 8px; /* Rounded corners */
+    color: white; /*#1e90ff; /* Text color */
+    background-color: rgba(30, 144, 255, 0.1); /* Light blue background with transparency */
+    border: none; /* Remove border */
+    border-radius: 15px; /* Rounded corners */
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
+/* Button Hover Effect */
 .button:hover {
-    background-color: #1e90ff; /* Background color on hover */
-    color: white; /* Text color on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
+    background-color: rgba(30, 144, 255, 0.2); /* Slightly darker blue on hover */
 }
-
 
 .project, .skill-project {
     background-color: white;
