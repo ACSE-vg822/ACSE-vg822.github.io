@@ -92,10 +92,42 @@ body {
     margin-bottom: 40px;
 }
 
-/* Fade-in effect for project cards */
+/* Project Card Container */
 .project {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between content and image */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+/* Project Content (70%) */
+.project-content {
+    width: 70%;
+    padding-right: 20px; /* Space between text and image */
+}
+
+/* Project Image Wrapper (30%) */
+.project-image-wrapper {
+    width: 30%;
+    height: 100%; /* Make the wrapper's height equal to the card's height */
+    overflow: hidden; /* Hide overflow to crop the image */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    /* Add border and shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Project Image */
+.project-image {
+    width: 100%; /* Make the image fit the width of the wrapper */
+    height: auto;
+    object-fit: cover; /* Crop the image while maintaining its center */
 }
 
 @keyframes fadeIn {
@@ -113,25 +145,27 @@ body {
     }
 }
 
-/* Transparent Button Styles */
+/* Button Styles */
 .button {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding for button size */
-    margin-right: 10px; /* Space between buttons */
-    font-size: 0.9em;
+    padding: 5px 15px; /* Reduce padding for smaller buttons */
+    margin-right: 10px;
+    font-size: 0.9em; /* Keep font size as it is */
     font-weight: bold;
-    color: #3498db; /* Text color */
+    color: #1e90ff; /* Text color */
     background-color: transparent; /* Transparent background */
-    border: 2px solid #3498db; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border: 2px solid #1e90ff; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .button:hover {
-    background-color: #3498db; /* Background color on hover */
+    background-color: #1e90ff; /* Background color on hover */
     color: white; /* Text color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
+
 
 .project, .skill-project {
     background-color: white;
@@ -144,14 +178,19 @@ body {
 
 .project:hover, .skill-project:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
-.project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+/* Project Image Styles */
+/* .project-image {
+    width: 100%; /* Make the image responsive */
+    /* height: auto; /* Maintain the aspect ratio */
+    /* border-radius: 10px; /* Rounded corners */
+    /* margin-bottom: 15px; /* Space between the image and the text */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for a frame effect */
+    /* border: 5px solid #fff; /* Optional: Add a white border */
+/*} */
+
 
 .project h3 {
     font-size: 1.5em;
@@ -177,30 +216,28 @@ body {
     text-decoration: underline;
 }
 
-/* Style for project icons */
+/* Project Icons */
 .project-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; /* Space between icons */
     margin-top: 15px;
 }
 
 .project-icons span {
-    background-color: #ecf0f1; /* Light background */
-    padding: 5px 10px;
-    border-radius: 5px; /* Rounded corners for a softer look */
+    background-color: #f0f0f0;
+    padding: 4px 10px; /* Reduce padding */
+    border-radius: 15px; /* Rounded corners */
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 0.8em; /* Reduce font size slightly */
 }
 
+/* Project Icon Images */
 .project-icons i, .project-icons img {
     margin-right: 5px;
-    font-size: 1.2em;
-}
-
-.project-icons img {
-    width: 20px;
-    height: 20px;
+    font-size: 1em; /* Adjust icon size */
 }
 
 /* Button Hover Effect */
