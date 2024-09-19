@@ -103,6 +103,52 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
+/* Project Title Styling */
+.project h3 {
+    font-family: 'Poppins', sans-serif; /* Use a modern and professional font */
+    font-size: 1.8em; /* Adjust font size */
+    font-weight: 600; /* Use a medium-bold weight */
+    color: #333; /* Darker color for better contrast */
+    margin-bottom: 15px; /* Space below the title */
+    padding-bottom: 5px; /* Space inside the title for decoration */
+    border-bottom: 2px solid rgba(30, 144, 255, 0.3); /* Subtle underline with a blue tint */
+    text-transform: capitalize; /* Capitalize the title */
+}
+
+/* Section Titles Styling */
+section h2 {
+    font-family: 'Poppins', sans-serif; /* Use a modern and professional font */
+    font-size: 1.5em; /* Adjust font size to fit in one line */
+    font-weight: 700; /* Use a bold weight to make it prominent */
+    text-align: center; /* Center the section titles */
+    margin-top: 30px; /* Add space above the title */
+    margin-bottom: 20px; /* Add space below the title */
+    text-transform: uppercase; /* Transform to uppercase for a clean look */
+    letter-spacing: 1px; /* Add letter spacing for a more refined look */
+    padding-bottom: 10px; /* Space inside the title for decoration */
+    max-width: 80%; /* Restrict the width */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Fallback Color */
+    color: #5a9cf2; /* Light blue fallback color */
+
+    /* Gradient Text */
+    background: linear-gradient(135deg, #1e90ff, #5a9cf2); /* Apply gradient */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Use gradient as text color */
+    background-clip: text; /* For non-webkit browsers */
+    text-fill-color: transparent; /* For non-webkit browsers */
+}
+
+
+/* Adjust container margins to separate from other sections */
+#projects, #skills {
+    margin-bottom: 40px; /* Space below each section */
+}
+
+
 /* Project Content (70%) */
 .project-content {
     width: 70%;
